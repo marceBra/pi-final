@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CAC</title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <!-- MENU -->
+  <nav>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo CAC">
+    </div>
+
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre nós</a>
+    <a href="#atividades">Nossos projetos</a>
+    <a href="#doacao">Como ajudar</a>
+    <a href="#transparencia">Transparência</a>
+    <a href="#blog">Blog</a>
+    <a href="#contatos">Contato</a>
+
+    <a href="#doacao" class="btn-menu">Doe agora</a>
+  </nav>
+
+
+  <!-- INÍCIO / BANNER PRINCIPAL -->
+  <section id="inicio" class="inicio">
+
+    <div class="carrossel">
+
+      <!-- SLIDE 1 -->
+      <div class="slide ativo">
+        <div class="slide-texto">
+
+          <h1>
+            O esporte<br>
+            transforma vidas.
+          </h1>
+
+          <p>
+            Há mais de 10 anos promovendo inclusão social e oportunidades
+            para crianças e jovens através do esporte.
+          </p>
+
+          <div class="botoes">
+            <a href="#doacao" class="btn btn-roxo">Quero ajudar</a>
+            <a href="#atividades" class="btn btn-transparente">Conheça nossos projetos</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SETAS DO CARROSSEL -->
+      <button class="seta esquerda" onclick="mudarSlide(-1)">&#10094;</button>
+      <button class="seta direita" onclick="mudarSlide(1)">&#10095;</button>
+
+      <!-- BOLINHAS -->
+      <div class="bolinhas">
+        <span class="bolinha ativa-bolinha" onclick="slideAtual(0)"></span>
+        <span class="bolinha" onclick="slideAtual(1)"></span>
+        <span class="bolinha" onclick="slideAtual(2)"></span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NÚMEROS / RESULTADOS -->
+  <section class="numeros">
+
+    <div>
+      <img src="img/icone1.png" alt="Ícone crianças">
+      <h2>+500</h2>
+      <span>Crianças e jovens atendidos</span>
+    </div>
+
+    <div>
+      <img src="img/icone2.png" alt="Ícone projetos">
+      <h2>+30</h2>
+      <span>Projetos realizados</span>
+    </div>
+
+    <div>
+      <img src="img/icone3.png" alt="Ícone modalidades">
+      <h2>+10</h2>
+      <span>Modalidades esportivas</span>
+    </div>
+
+    <div>
+      <img src="img/icone4.png" alt="Ícone voluntários">
+      <h2>+50</h2>
+      <span>Voluntários engajados</span>
+    </div>
+
+  </section>
+
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre secao">
+
+    <div class="sobre-imagem">
+      <img src="img/roda de crianças.png" alt="Crianças em atividade no CAC">
+    </div>
+
+    <div class="sobre-texto">
+
+      <p class="titulo-pequeno">Sobre nós</p>
+
+      <h1>
+        Mais que esporte,<br>
+        um propósito.
+      </h1>
+
+      <p>
+        A CAC é uma organização sem fins lucrativos que acredita no esporte
+        como ferramenta de transformação social.
+      </p>
+
+      <p>
+        Atuamos em comunidades oferecendo atividades esportivas, formação de
+        valores e apoio educacional, contribuindo para um futuro com mais
+        oportunidades e cidadania.
+      </p>
+
+      <a href="#contatos" class="btn btn-roxo">Conheça nossa história</a>
+
+    </div>
+
+  </section>
+
+
+  <!-- MODALIDADES -->
+  <section id="atividades" class="secao modalidades">
+
+    <p class="titulo-pequeno">Nossas modalidades</p>
+
+    <h1 class="titulo-secao">
+      Diversas modalidades, um só objetivo: transformar.
+    </h1>
+
+    <div class="container">
+
+      <div class="card card-modalidade">
+        <img src="img/natacao.png" alt="Natação">
+        <h3>Natação</h3>
+      </div>
+
+      <div class="card card-modalidade">
+        <img src="img/futbol.png" alt="Futebol">
+        <h3>Futebol</h3>
+      </div>
+
+      <div class="card card-modalidade">
+        <img src="img/atletismo.png" alt="Atletismo">
+        <h3>Atletismo</h3>
+      </div>
+
+      <div class="card card-modalidade">
+        <img src="img/mais.png" alt="Mais modalidades">
+        <h3>e muito mais</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DEPOIMENTOS -->
+  <section id="blog" class="depoimentos">
+
+    <p class="titulo-pequeno">Depoimentos</p>
+
+    <h1 class="titulo-secao">
+      Histórias que nos inspiram
+    </h1>
+
+    <div class="depoimento-card">
+
+      <div class="depoimento-texto">
+        <h3>“</h3>
+
+        <p>
+          A CAC mudou minha vida e a da minha família. Hoje tenho esperança
+          e novas oportunidades.
+        </p>
+
+        <span>
+          — Maria Eduarda, 15 anos<br>
+          Atleta do projeto desde 2019
+        </span>
+      </div>
+
+      <div class="depoimento-imagem">
+        <img src="img/criança.png" alt="Depoimento CAC">
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAIXA DE DOAÇÃO -->
+  <section id="doacao" class="faixa-doacao">
+
+    <div>
+      <h2>Você também pode fazer a diferença!</h2>
+
+      <p>
+        Sua doação, seu tempo ou sua empresa podem transformar o futuro
+        de muitas crianças e jovens.
+      </p>
+    </div>
+
+    <a href="#contatos" class="btn">Quero ajudar agora</a>
+
+  </section>
+
+
+  <!-- PARCEIROS -->
+  <section id="transparencia" class="parceiros">
+
+    <p class="titulo-pequeno">Nossos parceiros</p>
+
+    <h1 class="titulo-secao">
+      Juntos somos mais fortes
+    </h1>
+
+    <div class="logos-parceiros">
+      <div class="logo-parceiro">LOGO</div>
+      <div class="logo-parceiro">LOGO</div>
+      <div class="logo-parceiro">LOGO</div>
+      <div class="logo-parceiro">LOGO</div>
+      <div class="logo-parceiro">LOGO</div>
+      <div class="logo-parceiro">LOGO</div>
+    </div>
+
+  </section>
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+
+    <div class="newsletter-texto">
+      <h3>Fique por dentro das nossas ações</h3>
+
+      <p>
+        Receba novidades, histórias inspiradoras e formas de ajudar.
+      </p>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Seu e-mail">
+      <button type="submit">Inscrever-se</button>
+    </form>
+
+  </section>
+
+
+  <!-- CONTATOS -->
+  <section id="contatos" class="secao contatos">
+
+    <p class="titulo-pequeno">Contato</p>
+
+    <h1 class="titulo-secao">Fale Conosco</h1>
+
+    <p class="subtitulo">
+      Estamos prontos para ajudar! Entre em contato para saber mais sobre
+      nossas atividades e projetos sociais.
+    </p>
+
+    <div class="container cards-contato">
+
+      <div class="card verde">
+        <img src="img/whatsapp.png" alt="WhatsApp">
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/5511999999999" target="_blank" class="btn">
+          Fale pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="card laranja-card">
+        <img src="img/instagram.png" alt="Instagram">
+        <h3>Instagram</h3>
+        <a href="https://www.instagram.com/" target="_blank" class="btn">
+          Seguir no Instagram
+        </a>
+      </div>
+
+      <div class="card azul-card">
+        <img src="img/Telefone.png" alt="Telefone">
+        <h3>Telefone</h3>
+        <a href="tel:+5511999999999" class="btn">
+          Ligar agora
+        </a>
+      </div>
+
+    </div>
+
+
+    <!-- LOCALIZAÇÃO COM MAPA -->
+    <div class="localizacao">
+
+      <div class="localizacao-texto">
+
+        <p class="titulo-pequeno">Localização</p>
+
+        <h1>Onde estamos</h1>
+
+        <p>
+          Venha conhecer o CAC. Veja nossa localização no mapa abaixo
+          e encontre o melhor caminho até nós.
+        </p>
+
+        <a 
+          href="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d18456.81558459677!2d-43.985095!3d-19.8006247!3m2!1i1024!2i768!4f13.1!2m1!1scac%20venda%20nova!5e1!3m2!1spt-BR!2sbr!4v1780057269099!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        
+        </a>
+
+      </div>
+
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d18456.81558459677!2d-43.985095!3d-19.8006247!3m2!1i1024!2i768!4f13.1!2m1!1scac%20venda%20nova!5e1!3m2!1spt-BR!2sbr!4v1780057269099!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+
+    <div class="footer-container">
+
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Logo CAC">
+
+        <p>
+          Transformamos vidas hoje para construir um amanhã melhor para todos.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Institucional</h3>
+
+        <a href="#sobre">Sobre nós</a>
+        <a href="#inicio">Nosso time</a>
+        <a href="#transparencia">Transparência</a>
+        <a href="#blog">Relatórios</a>
+        <a href="#contatos">Trabalhe conosco</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Nossos projetos</h3>
+
+        <a href="#atividades">Natação</a>
+        <a href="#atividades">Futebol</a>
+        <a href="#atividades">Vôlei</a>
+        <a href="#atividades">Atletismo</a>
+        <a href="#atividades">Artes Marciais</a>
+        <a href="#atividades">Outras modalidades</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contato</h3>
+
+        <p>(11) 99999-9999</p>
+        <p>contato@cac.org.br</p>
+        <p>Rua das Flores, 123</p>
+        <p>São Paulo - SP</p>
+        <p>CEP 00000-000</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2024 CAC. Todos os direitos reservados.
+      </p>
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
